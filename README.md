@@ -17,7 +17,7 @@ cd Ai
 ```bash
 pip install -r requirements.txt
 ```
-## Config Your Details
+## Config Your API Key
 ```bash
 notepad config.env
 ```
