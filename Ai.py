@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv('config.env')
 
 #API KEY Environment
 gemini_api = os.getenv("gemini_api")
