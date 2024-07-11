@@ -1,6 +1,4 @@
-check the AI interface
 
-click on this link https://harish-gpt.streamlit.app/
 
 # AI
 
@@ -25,6 +23,7 @@ notepad config.env
 ```bash
 streamlit run Ai.py
 ```
+## Instructions
 
 A .env file in Python is a simple text file used to store configuration settings, environment variables, and other key-value pairs related to a Python project. These files typically contain sensitive information such as API keys, database credentials, or configuration settings.
 
