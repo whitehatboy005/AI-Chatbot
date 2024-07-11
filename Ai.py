@@ -1,25 +1,28 @@
 import streamlit as st
 import google.generativeai as genai
+import os
 from dotenv import load_dotenv
 
 load_dotenv('config.env')
 
 #API KEY Environment
-gemini_api = os.getenv("gemini_api")
-genai.configure(api_key=st.secrets["gemini_api"])
+GEMINI_API = os.getenv("GEMINI_API")
+NAME = os.getenv("NAME")
+
+genai.configure(api_key="GEMINI_API")
 
 def ai(txt):
     for m in genai.list_models():
         if 'generateContent' in m.supported_generation_methods:
             print(m.name)
     model = genai.GenerativeModel('gemini-pro')
-    response = model.generate_content("I am Harish Assistant. In the purpose of learn Ethical Hacking.: "+txt)
+    response = model.generate_content(txt)
     return response.text
 
 
 
 # Streamlit interface
-st.title("Welcome to Harish AI")
+st.title(f"Welcome to {NAME} AI")
 
 command = st.chat_input("How can I help you?")
 
