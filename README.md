@@ -1,7 +1,8 @@
+## Model Output
 
+![Screenshot 2024-07-11 173855](https://github.com/whitehatboy005/Ai/assets/147156726/042b5ad2-286e-4743-a921-bbe0e7b06203)
 
 # AI
-
 ## Installation
 ## Clone the Repository
 ```bash
