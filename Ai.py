@@ -1,15 +1,14 @@
+
 import streamlit as st
 import google.generativeai as genai
-import os
 from dotenv import load_dotenv
+import os
 
 load_dotenv('config.env')
-
-#API KEY Environment
-GEMINI_API = os.getenv("GEMINI_API")
+API_KEY = os.getenv("API_KEY")
 NAME = os.getenv("NAME")
 
-genai.configure(api_key="GEMINI_API")
+genai.configure(api_key=API_KEY)
 
 def ai(txt):
     for m in genai.list_models():
@@ -39,7 +38,7 @@ if command:
         st.write(command)
         st.session_state.message.append({"role": "user", "message": command})
 
-    if "hello" in command or "Hello" in command:
+    if "hello" in command or "Hello" in command or "hi" in command or "Hi" in command:
         with st.chat_message("bot"):
             st.write("Hi How can i help you.")
             st.session_state.message.append({"role": "bot", "message": "Hi How can i help you."})
@@ -47,8 +46,8 @@ if command:
 
     elif "Who are you" in command or "who are you" in command:
         with st.chat_message("bot"):
-            st.write(f"I'm {NAME} ai assistant")
-            st.session_state.message.append({"role": "bot", "message": f"I'm {NAME} assistant"})
+            st.write(f"I'm {NAME} AI assistant")
+            st.session_state.message.append({"role": "bot", "message": f"I'm {NAME} AI assistant"})
 
 
     else:
