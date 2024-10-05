@@ -15,7 +15,7 @@ This Python application creates a chatbot interface using Streamlit, allowing us
 ## Installation
 ## Clone the Repository
 ```bash
-git clone https://github.com/whitehatboy005/Ai
+git clone https://github.com/whitehatboy005/AI-Chatbot
 ```
 ## Move the file
 ```bash
