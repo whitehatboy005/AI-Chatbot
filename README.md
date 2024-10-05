@@ -19,7 +19,7 @@ git clone https://github.com/whitehatboy005/AI-Chatbot
 ```
 ## Move the file
 ```bash
-cd Ai
+cd AI-Chatbot
 ```
 ## Install Dependencies
 ```bash
