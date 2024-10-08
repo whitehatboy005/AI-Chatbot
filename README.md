@@ -11,6 +11,9 @@ This Python application creates a chatbot interface using Streamlit, allowing us
 ## Model Output
 
 ![Screenshot 2024-07-11 173855](https://github.com/whitehatboy005/Ai/assets/147156726/042b5ad2-286e-4743-a921-bbe0e7b06203)
+## API KEY OBTAIN
+
+To get GEMINI_API_KEY in this link https://aistudio.google.com/app/apikey
 
 ## Installation
 ## Clone the Repository
@@ -33,8 +36,4 @@ notepad config.env
 ```bash
 streamlit run Ai.py
 ```
-## Instructions
 
-A .env file in Python is a simple text file used to store configuration settings, environment variables, and other key-value pairs related to a Python project. These files typically contain sensitive information such as API keys, database credentials, or configuration settings.
-
-To get GEMINI_API_KEY in this link https://aistudio.google.com/app/apikey
