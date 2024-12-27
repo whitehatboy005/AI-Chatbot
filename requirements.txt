@@ -1,4 +1,4 @@
-streamlit
+streamlit==1.32.0
 google-ai-generativelanguage==0.6.6
 google-generativeai==0.7.2
 python-dotenv==1.0.1
