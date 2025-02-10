@@ -25,7 +25,7 @@ cd AI-Chatbot
 ```bash
 pip install -r requirements.txt
 ```
-## Config Your API Key
+## Configure Environment Variables for API
 ```bash
 notepad config.env
 ```
