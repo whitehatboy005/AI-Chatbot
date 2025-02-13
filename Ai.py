@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv('config.env')
-API_KEY = os.getenv("API_KEY")
+API_KEY = os.getenv("GEMINI_API")
 NAME = os.getenv("NAME")
 
 genai.configure(api_key=API_KEY)
