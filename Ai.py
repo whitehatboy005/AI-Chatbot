@@ -14,7 +14,7 @@ def ai(txt):
     for m in genai.list_models():
         if 'generateContent' in m.supported_generation_methods:
             print(m.name)
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-pro-latest')
     response = model.generate_content(txt)
     return response.text
 
